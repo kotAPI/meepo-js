@@ -28,20 +28,33 @@ var meepoJS = {
 		var failed = []
 		var success = []
 
+		var configProvided = undefined;
+		// defaults
+		if(config===undefined){
+			configProvided= false
+		} 
+		
+
+		//
 		for(var i=0;i<scriptArray.length;i++){
 			var res = await this.loadScript(scriptArray[i])
 			
 			if(res.status===false){
 				failed.push(res.scriptURL)
-				if(config.logging===true){
-					console.log("%c Script Load Failed! \n"+ res.scriptURL,'background: red; color: white;padding:8px;')
+				if(configProvided){
+					if(config.logging===true){
+						console.log("%c Script Load Failed! \n"+ res.scriptURL,'background: red; color: white;padding:8px;')
+					}
 				}
+				
 				
 			}else if(res.status === true){
 				
 				success.push(res.scriptURL)
-				if(config.logging===true){
-					console.log("%c Script loaded Successfully! \n"+ res.scriptURL,'background: green; color: white;padding:8px;')
+				if(configProvided){
+					if(config.logging===true){
+						console.log("%c Script loaded Successfully! \n"+ res.scriptURL,'background: green; color: white;padding:8px;')
+					}
 				}
 			}
 

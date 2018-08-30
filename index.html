@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meepo JS</title>
+	<link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/kotAPI/boilet-css/master/dist/css/main.css">
+</head>
+<body>
+	<div class="row">
+		<div class="small-12 columns">
+			<h1 style="text-align: center;">Meepo JS</h1>
+		</div>
+		<button onclick="loadScripts()">
+			Load Scripts
+		</button>
+	</div>
+	<script type="text/javascript" src="./meepo.js"></script>
+	<script type="text/javascript">
+		// https://unpkg.com/react@16/umd/react.development.js
+
+		function loadScripts(){
+			var scripts = ["https://unpkg.com/react@16/umd/react.development.js","https://unpkg.com/react-dom@16/umd/react-dom.development.js"]
+			meepoJS.loadScripts(scripts).then(res => {
+			    console.log(res);
+			    alert("Loaded scripts : "+ res.successful_URLs.join(","))
+			  });
+		}
+	</script>
+</body>
+</html>
