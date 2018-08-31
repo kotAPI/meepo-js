@@ -1,0 +1,32 @@
+{
+  "name": "meepo",
+  "version": "1.0.0",
+  "description": "A promise based sequential JavaScript script loader that takes care of loading scripts on to the DOM for you in the desired order",
+  "main": "meepo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotAPI/meepo-js.git"
+  },
+  "keywords": [
+    "meepojs",
+    "meepo-js",
+    "async",
+    "script",
+    "loader",
+    "load",
+    "javascript",
+    "dynamically"
+  ],
+  "author": "Pranay Kothapalli (pranaykothapalli@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kotAPI/meepo-js/issues"
+  },
+  "homepage": "https://github.com/kotAPI/meepo-js#readme",
+  "devDependencies": {
+    "babel-minify": "^0.4.3"
+  }
+}
