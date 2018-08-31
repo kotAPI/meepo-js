@@ -5,6 +5,7 @@ var meepoJS = {
 			script.setAttribute("src",scriptSrc)
 			document.getElementsByTagName('head')[0].appendChild(script);
 
+			// On sucess handler
 			script.onload = (res)=>{
 				var responseObject = {}
 
@@ -14,6 +15,7 @@ var meepoJS = {
 				
 				resolve(responseObject)
 			}
+			// On error handler
 			script.onerror = (err)=>{
 				var responseObject = {}
 
@@ -34,7 +36,6 @@ var meepoJS = {
 			configProvided= false
 		} 
 		
-
 		//
 		for(var i=0;i<scriptArray.length;i++){
 			var res = await this.loadScript(scriptArray[i])
