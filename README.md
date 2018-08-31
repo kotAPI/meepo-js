@@ -6,7 +6,7 @@ Production - `https://cdn.rawgit.com/kotAPI/meepo-js/fa69e051/meepo.js`
 ### Usage
 
 Add the script to your HTML
-```
+```html
 <script src="./meepo.js"></script>
 ```
 
@@ -24,7 +24,7 @@ the `status` is true if all scripts have loaded successfully, shows false if any
 
 Also returns two arrays of fields 'successful_URLs' and 'failed_URLs' that contain loaded scripts and failed script URLS respsectively
 
-```
+```javascript
 {"status":true,"successful_URLs":[],"failed_URLs":[]}
 ```
 
@@ -34,8 +34,19 @@ Also returns two arrays of fields 'successful_URLs' and 'failed_URLs' that conta
 configObject:{
 	logging:true
 }
+```
 pass this object for extra functionality
 
 set `logging` to true if you want to log loaded/failed scripts and other extra information.
 
-```
+
+
+
+
+# Contributing
+
+We use babel-minify `https://github.com/babel/minify/tree/master/packages/babel-minify` to minify our final code.
+
+Install this package and uglify the source into the dist folder with the name 'meepo.min.js'before sending a PR.
+
+
