@@ -1,6 +1,6 @@
 # Meepo JS
 
-Production - `https://cdn.rawgit.com/kotAPI/meepo-js/fa69e051/meepo.js`
+Production - `https://cdn.jsdelivr.net/gh/kotAPI/meepo-js@v1.0/dist/meepo.min.js`
 
 
 ### Usage
