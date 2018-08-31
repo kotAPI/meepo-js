@@ -13,8 +13,8 @@ Add the script to your HTML
 #### Loading the scripts 
 ```javascript
 meepoJS.loadScripts(["script1","script2","script3"....,"script-n"],configObject).then(res => {
-    console.log(res);
-  });
+	console.log(res);
+});
 ```
 
 #### Understanding the response Object
@@ -37,7 +37,7 @@ configObject:{
 ```
 pass this object for extra functionality
 
-set `logging` to true if you want to log loaded/failed scripts and other extra information.
+set `logging` to true if you want to log loaded/failed scripts and other log-based information.
 
 
 
