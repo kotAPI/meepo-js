@@ -49,4 +49,17 @@ We use babel-minify `https://github.com/babel/minify/tree/master/packages/babel-
 
 Install this package and uglify the source into the dist folder with the name 'meepo.min.js'before sending a PR.
 
+### Installing babel-minify
 
+Use sudo if you're bombarded with no-enough-access errors
+```
+npm install babel-minify -g
+```
+
+then,
+
+```
+minify meepo.js --out-file dist/meepo.min.js
+```
+
+And then send a PR
