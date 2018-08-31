@@ -1,6 +1,6 @@
 # Meepo JS
 
-![meepo-js](./meepo.jpg)
+![meepo-js](./media/meepo.jpg)
 
 
 Production - `https://cdn.jsdelivr.net/gh/kotAPI/meepo-js@v1.0/dist/meepo.min.js`
