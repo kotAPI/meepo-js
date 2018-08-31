@@ -70,3 +70,14 @@ minify meepo.js --out-file dist/meepo.min.js
 ```
 
 And then send a PR
+
+
+
+#### Credits/ Disclaimer
+
+
+- If you're a fan of DotA like me, the name for this library is inspired from a hero called 'meepo' from  DotA whose ultimate is named "Divided we stand, Divided we fall." which translates into development world very well in a sense. If one of the dependent script fails to load, the whole app crashes, pun intended.
+
+(Image) - I do not own or have copyrights to the image used in the readme, I'd love to credit the original author. Please raise an issue if you know the original artist.
+
+- The name and the image isn't owned by me and belongs to DotA2.
