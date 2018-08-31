@@ -25,7 +25,11 @@ the `status` is true if all scripts have loaded successfully, shows false if any
 Also returns two arrays of fields 'successful_URLs' and 'failed_URLs' that contain loaded scripts and failed script URLS respsectively
 
 ```javascript
-{"status":true,"successful_URLs":[],"failed_URLs":[]}
+{
+	"status":true,
+	"successful_URLs":[],
+	"failed_URLs":[]
+}
 ```
 
 #### ConfigObject
